@@ -52,7 +52,6 @@ public class Staff {
         return reservationManager.getReservation(reservationId);
     }
 
-    // Table Management
     public void addTable(int tableNumber, int numberOfSeats) {
         tables.add(new Table(tableNumber, numberOfSeats));
     }
@@ -76,7 +75,6 @@ public class Staff {
         }
     }
 
-    // Restaurant Information
     public void viewRestaurantDetails() {
         System.out.println(restaurant);
     }

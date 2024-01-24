@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         Menu menu = new Menu();
         ReservationManager reservationManager = new ReservationManager();
-        Restaurant restaurant = new Restaurant("Gourmet Palace", "123 Flavor Street", "555-1234", "www.gourmetpalace.com", "9 AM - 11 PM");
+        Restaurant restaurant = new Restaurant("Golden chicken", "Yangi Sergeli street, 12", "(78) 777-77-47", "https://university.pdp.uz", "9 AM - 11 PM");
         List<Table> tables = new ArrayList<>();
 
         for (int i = 1; i <= 10; i++) {
@@ -53,7 +53,7 @@ public class Main {
             System.out.println("1. Make a Reservation\n2. Manage Existing Reservation\n3. Back");
             System.out.print("Choose an option: ");
             int option = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (option) {
                 case 1 -> makeReservation(staff, reservationManager);
