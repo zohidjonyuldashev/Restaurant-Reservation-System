@@ -249,6 +249,7 @@ public class Main {
                     staff.addMenuItem(name, price);
                 }
                 case 2 -> {
+                    staff.viewMenu();
                     System.out.print("Enter meal name: ");
                     String newName = scanner.nextLine();
                     System.out.print("Enter meal price: ");
@@ -256,6 +257,7 @@ public class Main {
                     staff.updateMenuItem(newName, newPrice);
                 }
                 case 3 -> {
+                    staff.viewMenu();
                     System.out.print("Enter meal name: ");
                     String removedMeal = scanner.nextLine();
                     staff.removeMenuItem(removedMeal);
